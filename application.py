@@ -6,7 +6,6 @@ from PIL import Image
 from serch import create_index_faiss, find_closest_vectors_faiss
 from openai import OpenAI
 import os
-from PIL import Image
 import subprocess
 import io
 

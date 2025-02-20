@@ -1,0 +1,20 @@
+{
+  "version": "38.0.1",
+  "files": {
+    "48951a6c4c7498c46dc74fe0c98d879b8a0678ef2ee1e947db4715f9dbdc94df": {
+      "source": {
+        "path": "Ec2ForDL2.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "615299769340-ap-northeast-1": {
+          "bucketName": "cdk-hnb659fds-assets-615299769340-ap-northeast-1",
+          "objectKey": "48951a6c4c7498c46dc74fe0c98d879b8a0678ef2ee1e947db4715f9dbdc94df.json",
+          "region": "ap-northeast-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::615299769340:role/cdk-hnb659fds-file-publishing-role-615299769340-ap-northeast-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

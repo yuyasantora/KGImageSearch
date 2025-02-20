@@ -1,0 +1,143 @@
+{
+  "version": "38.0.1",
+  "artifacts": {
+    "Ec2ForDL2.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "Ec2ForDL2.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "Ec2ForDL2": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://615299769340/ap-northeast-1",
+      "properties": {
+        "templateFile": "Ec2ForDL2.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::615299769340:role/cdk-hnb659fds-deploy-role-615299769340-ap-northeast-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::615299769340:role/cdk-hnb659fds-cfn-exec-role-615299769340-ap-northeast-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-615299769340-ap-northeast-1/48951a6c4c7498c46dc74fe0c98d879b8a0678ef2ee1e947db4715f9dbdc94df.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "Ec2ForDL2.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::615299769340:role/cdk-hnb659fds-lookup-role-615299769340-ap-northeast-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "Ec2ForDL2.assets"
+      ],
+      "metadata": {
+        "/Ec2ForDL2/Ec2ForDl-Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcE65EB314"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/publicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcpublicSubnet1Subnet57047971"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/publicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcpublicSubnet1RouteTable939D7A29"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/publicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcpublicSubnet1RouteTableAssociation71815FCA"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/publicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcpublicSubnet1DefaultRoute1E050367"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcIGW1AE92644"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlVpcVPCGW2C274136"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlSgE309C7DD"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Instance/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlInstanceInstanceRoleB7875055"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Instance/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlInstanceInstanceProfile501596D9"
+          }
+        ],
+        "/Ec2ForDL2/Ec2ForDl-Instance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2ForDlInstanceF0415522"
+          }
+        ],
+        "/Ec2ForDL2/InstancePublicDnsName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstancePublicDnsName"
+          }
+        ],
+        "/Ec2ForDL2/InstancePublicIp": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstancePublicIp"
+          }
+        ],
+        "/Ec2ForDL2/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/Ec2ForDL2/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/Ec2ForDL2/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "Ec2ForDL2"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

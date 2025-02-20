@@ -9,7 +9,7 @@ import os
 import subprocess
 import io
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 def run_image_search_app():
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))

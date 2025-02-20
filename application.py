@@ -12,7 +12,7 @@ import io
 os.environ["OPENAI_API_KEY"] = ""
 
 def run_image_search_app():
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
     st.title("KG 画像検索")
     st.write("よく使用される検索ワード")
     common_keywords = ['traffic light', 'night', 'wet road', 'tunnel', '橋', '歩行者', '青空', ]
